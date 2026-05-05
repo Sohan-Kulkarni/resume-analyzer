@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.tmp/
+.pip-cache/
+data/
+*.db
+logs/
+
+node_modules/
+dist/
+.vite/
+npm-debug.log*
