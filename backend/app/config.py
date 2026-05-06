@@ -20,14 +20,7 @@ class Settings:
     MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "8"))
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-    CORS_ORIGINS = [
-        origin.strip()
-        for origin in os.getenv(
-            "CORS_ORIGINS",
-            "http://localhost:5173,http://127.0.0.1:5173",
-        ).split(",")
-        if origin.strip()
-    ]
+    CORS_ORIGINS = ['*']
 
 
 settings = Settings()
