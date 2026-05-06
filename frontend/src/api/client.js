@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://resume-analyzer-2-83ad.onrender.com";
 
 export async function uploadResume(file) {
   const formData = new FormData();
